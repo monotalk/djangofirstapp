@@ -9,6 +9,14 @@
     <main>
       <h2>学習時間をシェアしよう！</h2>
       <h3>studyshareでできること</h3>
+      
+      {% for post in posts %}
+        <div>
+          <p>published:{{ post.published_date }}</p>
+          <h2><a href="">{{ post.title }}</a></h2>
+          <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+      {% endfor %}
 
     </main>
     <footer>
