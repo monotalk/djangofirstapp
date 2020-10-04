@@ -12,10 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 
-try:
-    from .local_settings import *
-except ImportError:
-    pass
+SECRET_KEY = '#i-vg0g=wapuc(k(jg%h^42d1w9zb2evj_0rmehc&6nn7c0)i8'
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
